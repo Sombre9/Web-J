@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Ernest O. Jephthah</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Inter', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom,#1e40af 0%,#0f172a 50%,#020617 100%);
+      min-height: 100vh;
+    }
+    body::before {
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      z-index:0;
+    }
+    main, header, footer { position:relative; z-index:1; }
+  </style>
+</head>
+
+<body class="font-body text-white antialiased overflow-x-hidden">
+
+<header class="fixed top-0 left-0 w-full z-50">
+  <nav class="backdrop-blur-lg bg-gradient-to-r from-sky-600/20 via-sky-800/20 to-slate-900/40 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between">
+      <a href="index.html" class="font-heading text-sm flex items-center gap-2">
+        <i class="bx bx-brain text-sky-300 text-xl"></i>
+        Technologist · Writer · Digital Artist
+      </a>
+      <ul class="hidden md:flex gap-8 text-sm font-heading">
+        <li><a href="index.html">Home</a></li>
+        <li class="text-sky-300">Work</li>
+        <li><a href="writing.html">Writing</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="pt-36 pb-24">
+
+<!-- ================= VISUAL WORKS ================= -->
+<section class="max-w-6xl mx-auto px-6 mb-24">
+  <h1 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
+    Visual & Digital Art
+  </h1>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+    <div class="work-card">
+  <img src="images/moon-mage.png"
+       class="work-img"
+       data-title="Moon Mage"
+       data-desc="A fantasy digital artwork created using AI-assisted creative workflows." />
+
+  <a href="caseStudies.html#moon-mage"
+     class="case-overlay">
+     Read Case Study
+  </a>
+</div>
+
+    <div class="group relative">
+      <img src="images/Banner1.png"
+           class="work-img rounded-xl aspect-[4/5] object-cover cursor-pointer"
+           data-title="Banner Design"
+           data-desc="A clean promotional banner designed for digital visibility and engagement."
+           data-case="banner-design" />
+      <a href="caseStudies.html#banner-design" class="absolute bottom-3 right-3 px-3 py-1.5 text-xs rounded-md bg-black/60 backdrop-blur">Read Case Study</a>
+    </div>
+
+    <div class="group relative">
+      <img src="images/cenematic-scene.jpg"
+           class="work-img rounded-xl aspect-[4/5] object-cover cursor-pointer"
+           data-title="Cinematic Scene"
+           data-desc="A cinematic composition exploring mood, light, and storytelling."
+           data-case="cinematic-scene" />
+      <a href="caseStudies.html#cinematic-scene" class="absolute bottom-3 right-3 px-3 py-1.5 text-xs rounded-md bg-black/60 backdrop-blur">Read Case Study</a>
+    </div>
+
+    <div class="group relative">
+      <img src="images/moon-mage.png"
+           class="work-img rounded-xl aspect-[4/5] object-cover cursor-pointer"
+           data-title="Moon Mage"
+           data-desc="A fantasy digital artwork created using AI-assisted creative workflows."
+           data-case="moon-mage" />
+      <a href="caseStudies.html#moon-mage" class="absolute bottom-3 right-3 px-3 py-1.5 text-xs rounded-md bg-black/60 backdrop-blur">Read Case Study</a>
+    </div>
+
+    <div class="group relative">
+      <img src="images/cloud-visual.png"
+           class="work-img rounded-xl aspect-[4/5] object-cover cursor-pointer"
+           data-title="Cloud Visual"
+           data-desc="Conceptual artwork symbolizing creativity, elevation, and imagination."
+           data-case="cloud-visual" />
+      <a href="caseStudies.html#cloud-visual" class="absolute bottom-3 right-3 px-3 py-1.5 text-xs rounded-md bg-black/60 backdrop-blur">Read Case Study</a>
+    </div>
+
+    <div class="group relative">
+      <img src="images/portrait-retouch.png"
+           class="work-img rounded-xl aspect-[4/5] object-cover cursor-pointer"
+           data-title="Portrait Retouch"
+           data-desc="Professional portrait retouch focusing on tone, realism, and detail."
+           data-case="portrait-retouch" />
+      <a href="caseStudies.html#portrait-retouch" class="absolute bottom-3 right-3 px-3 py-1.5 text-xs rounded-md bg-black/60 backdrop-blur">Read Case Study</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WEB PROJECTS ================= -->
+<section class="max-w-5xl mx-auto px-6 mb-24">
+  <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
+    Web Projects
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+      <h3 class="font-heading text-xl font-semibold mb-2">MTN Landing Page</h3>
+      <p class="text-white/70 text-sm mb-4">
+        A responsive brand-focused landing page built with modern UI principles.
+      </p>
+      <div class="flex gap-4 text-sm">
+        <a href="https://mtn-web-by-sombre9techltd.netlify.app" target="_blank" class="text-sky-400">View Live</a>
+        <a href="caseStudies.html#mtn" class="text-white/60 hover:text-sky-300">Read Case Study</a>
+      </div>
+    </div>
+
+    <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+      <h3 class="font-heading text-xl font-semibold mb-2">Maggi Landing Page</h3>
+      <p class="text-white/70 text-sm mb-4">
+        A clean promotional landing page emphasizing clarity and layout.
+      </p>
+      <div class="flex gap-4 text-sm">
+        <a href="https://maggi-landing-page.netlify.app" target="_blank" class="text-sky-400">View Live</a>
+        <a href="caseStudies.html#maggi" class="text-white/60 hover:text-sky-300">Read Case Study</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ================= LIGHTBOX ================= -->
+<div id="lightbox" class="fixed inset-0 hidden bg-black/90 z-50 flex items-center justify-center p-6 text-center">
+  <div>
+    <img id="lbImg" class="max-h-[70vh] mx-auto rounded-xl shadow-2xl mb-6">
+    <h2 id="lbTitle" class="font-heading text-2xl font-semibold mb-2"></h2>
+    <p id="lbDesc" class="text-white/70 max-w-xl mx-auto"></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="mt-24 pt-10 pb-8 text-center text-sm font-heading text-white/50">
+  <div class="max-w-xs mx-auto border-t border-white/10 mb-6"></div>
+  <p>© 2025 Ernest O. Jephthah — Portfolio</p>
+  <p class="mt-1">Created by <span class="text-sky-400">Sombre9 Tech Ltd</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

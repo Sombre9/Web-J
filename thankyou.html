@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Ernest O. Jephthah</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Inter', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #020617 0%, #020617 40%, #0f172a 100%);
+      min-height: 100vh;
+    }
+
+    /* Entrance */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    /* Sticker bounce */
+    @keyframes stickerBounce {
+      0% { transform: scale(0.9) translateY(8px); opacity: 0; }
+      60% { transform: scale(1.05) translateY(-6px); opacity: 1; }
+      100% { transform: scale(1) translateY(0); }
+    }
+    .sticker {
+      animation: stickerBounce 0.9s ease-out forwards;
+    }
+
+    /* Pulse ring */
+    @keyframes pulse {
+      0% { transform: scale(0.8); opacity: 0.4; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+    .pulse-ring::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      border: 2px solid rgba(56, 189, 248, 0.6);
+      animation: pulse 1.6s ease-out infinite;
+    }
+  </style>
+</head>
+
+<body class="font-body text-white antialiased overflow-x-hidden flex items-center justify-center">
+
+<main class="max-w-xl w-full px-6 text-center fade-in">
+
+  <!-- Sticker Icon -->
+  <div class="flex justify-center mb-8 relative">
+    <div class="relative w-20 h-20 rounded-full bg-white/5 border border-white/10 flex items-center justify-center sticker pulse-ring">
+      <i class="bx bx-check text-4xl text-sky-400"></i>
+    </div>
+  </div>
+
+  <!-- Text -->
+  <h1 class="text-4xl font-heading font-bold mb-4">
+    Message Received 🎉
+  </h1>
+
+  <p class="text-white/65 leading-relaxed mb-10">
+    Thank you for reaching out.  
+    Your message has been successfully sent, and I’ll get back to you shortly.
+    <br><br>
+    Until then, feel free to explore my work, writing, and creative projects.
+  </p>
+
+  <!-- Actions -->
+  <div class="flex flex-col sm:flex-row justify-center gap-4 font-heading">
+    <a href="index.html"
+       class="px-8 py-3 rounded-lg bg-sky-400 text-black font-medium hover:bg-sky-300 transition">
+      Back to Home
+    </a>
+
+    <a href="work.html"
+       class="px-8 py-3 rounded-lg border border-white/20 hover:border-sky-400 hover:text-sky-400 transition">
+      View My Work
+    </a>
+  </div>
+
+</main>
+
+</body>
+</html>

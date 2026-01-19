@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Ernest O. Jephthah</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Inter', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(
+        to bottom,
+        #1e40af 0%,
+        #0f172a 50%,
+        #020617 100%
+      );
+      min-height: 100vh;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="font-body text-white antialiased overflow-x-hidden">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 left-0 w-full z-50">
+  <nav class="backdrop-blur-lg bg-slate-950/70 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+
+      <a href="index.html" class="font-heading text-sm md:text-base flex items-center gap-2">
+        <i class="bx bx-brain text-sky-400 text-xl"></i>
+        Technologist · Writer · Digital Artist
+      </a>
+
+      <ul class="hidden md:flex gap-8 text-sm font-heading">
+        <li class="text-white/70 hover:text-sky-300"><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+        <li class="text-sky-300"><a href="about.html"><i class="bx bx-user"></i> About</a></li>
+        <li class="text-white/70 hover:text-sky-300"><a href="work.html"><i class="bx bx-grid-alt"></i> Work</a></li>
+        <li class="text-white/70 hover:text-sky-300"><a href="writing.html"><i class="bx bx-edit"></i> Writing</a></li>
+        <li class="text-white/70 hover:text-sky-300"><a href="contact.html"><i class="bx bx-envelope"></i> Contact</a></li>
+      </ul>
+
+      <button id="menuBtn" class="md:hidden text-2xl"><i class="bx bx-menu"></i></button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-950/90 backdrop-blur-xl font-heading">
+      <ul class="flex flex-col px-6 py-6 gap-4">
+        <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+        <li class="text-sky-300"><a href="about.html"><i class="bx bx-user"></i> About</a></li>
+        <li><a href="work.html"><i class="bx bx-grid-alt"></i> Work</a></li>
+        <li><a href="writing.html"><i class="bx bx-edit"></i> Writing</a></li>
+        <li><a href="contact.html"><i class="bx bx-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= CONTENT ================= -->
+<main class="pt-36 pb-28">
+
+<!-- HERO -->
+<section class="text-center mb-28 px-6 reveal">
+  <img
+    src="images/founder.jpg"
+    alt="Ernest O. Jephthah"
+    class="w-44 h-44 mx-auto rounded-full object-cover border-4 border-sky-400/40 shadow-2xl cursor-pointer"
+    id="profileImg"
+  />
+
+  <h1 class="mt-8 text-4xl md:text-5xl font-heading font-bold tracking-tight">
+    Ernest O. Jephthah
+  </h1>
+
+  <p class="mt-3 text-white/60 font-heading">
+    Founder · Sombre9 Tech Ltd
+  </p>
+</section>
+
+<!-- JOURNEY -->
+<section class="max-w-4xl mx-auto px-6 relative space-y-20">
+
+  <!-- Vertical line -->
+  <div class="absolute left-4 top-0 bottom-0 w-px bg-white/10 hidden sm:block"></div>
+
+  <div class="relative pl-12 reveal">
+    <i class="bx bx-book-open text-sky-400 absolute left-0 top-1"></i>
+    <p class="text-white/70 leading-relaxed text-lg">
+      My journey began in my mother’s bookshop, where novels became teachers.
+      Writers like <span class="text-sky-400">David Eddings</span> shaped how I understood imagination,
+      description, and natural storytelling long before technology entered my life.
+    </p>
+  </div>
+
+  <div class="relative pl-12 reveal">
+    <i class="bx bx-hard-hat text-sky-400 absolute left-0 top-1"></i>
+    <p class="text-white/70 leading-relaxed text-lg">
+      Loss and responsibility interrupted creativity. I worked in construction to survive,
+      supporting family while design lived quietly through blueprints and structure.
+    </p>
+  </div>
+
+  <div class="relative pl-12 reveal">
+    <i class="bx bx-brain text-sky-400 absolute left-0 top-1"></i>
+    <p class="text-white/70 leading-relaxed text-lg">
+      Learning became a turning point. Through free platforms and self-study,
+      I explored artificial intelligence — understanding systems, models, and prompts.
+      AI became a tool for expression, not a replacement for thought.
+    </p>
+  </div>
+
+  <div class="relative pl-12 reveal">
+    <i class="bx bx-code-alt text-sky-400 absolute left-0 top-1"></i>
+    <p class="text-white/70 leading-relaxed text-lg">
+      Web development followed. Communities like OG Tech Ltd taught me structure and logic.
+      Combining fundamentals with AI allowed me to design, debug, and build with intention.
+    </p>
+  </div>
+
+  <div class="relative pl-12 reveal">
+    <i class="bx bx-layer text-sky-400 absolute left-0 top-1"></i>
+    <p class="text-white/70 leading-relaxed text-lg">
+      What started as small visuals evolved into
+      <span class="text-sky-400">Sombre9 Tech Ltd</span> —
+      uniting design, web, and storytelling.
+      Writing continues under the pen name <span class="text-sky-400">Âme Sombre</span>.
+    </p>
+  </div>
+
+  <div class="relative pl-12 reveal">
+    <i class="bx bx-compass text-sky-400 absolute left-0 top-1"></i>
+    <p class="text-white/70 leading-relaxed text-lg">
+      This journey continues. Every project is built with purpose —
+      blending creativity, technology, and clarity to create work that lasts.
+    </p>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="mt-28 text-center px-6 flex flex-col sm:flex-row gap-4 justify-center font-heading reveal">
+  <a href="work.html"
+     class="px-8 py-4 rounded-lg bg-sky-400 text-black font-medium hover:bg-sky-300 transition">
+    View Design & Web Work
+  </a>
+
+  <a href="writing.html"
+     class="px-8 py-4 rounded-lg border border-white/30 text-white hover:border-sky-400 hover:text-sky-400 transition">
+    Explore Writing & Audio
+  </a>
+</section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 hidden bg-black/90 z-50 flex items-center justify-center p-6">
+  <img src="images/founder.jpg" class="max-h-[80vh] rounded-xl shadow-2xl">
+</div>
+
+<!-- FOOTER -->
+<footer class="mt-24 pt-10 pb-8 text-center text-sm font-heading text-white/50">
+  <div class="max-w-xs mx-auto border-t border-white/10 mb-6"></div>
+  <p>© 2025 Ernest O. Jephthah — Portfolio</p>
+  <p class="mt-1">Created by <span class="text-sky-400">Sombre9 Tech Ltd</span></p>
+</footer>
+
+<script>
+(function () {
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  const img = document.getElementById("profileImg");
+  const lb = document.getElementById("lightbox");
+  const reveals = document.querySelectorAll(".reveal");
+
+  if (btn && menu) btn.onclick = () => menu.classList.toggle("hidden");
+  if (img && lb) img.onclick = () => lb.classList.remove("hidden");
+  if (lb) lb.onclick = () => lb.classList.add("hidden");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("show");
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(el => observer.observe(el));
+})();
+</script>
+
+</body>
+</html>
+
+
+
+

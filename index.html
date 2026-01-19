@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ernest O. Jephthah — Web J</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Inter', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      /* MUTED BLUE — MATCHES ABOUT PAGE */
+      background: linear-gradient(
+        to bottom,
+        #1e40af 0%,
+        #0f172a 50%,
+        #020617 100%
+      );
+      min-height: 100vh;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.9s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="font-body text-white antialiased overflow-x-hidden">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 left-0 w-full z-50">
+  <nav class="backdrop-blur-lg bg-gradient-to-r from-sky-600/30 via-sky-800/30 to-slate-900/40 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+
+      <a href="index.html" class="font-heading text-sm md:text-base text-white/90 flex items-center gap-2">
+        <i class="bx bx-brain text-sky-300 text-xl"></i>
+        Technologist · Writer · Digital Artist
+      </a>
+
+      <ul class="hidden md:flex gap-8 text-sm font-heading">
+        <li class="text-sky-300">
+          <a href="index.html" class="flex items-center gap-1">
+            <i class="bx bx-home"></i> Home
+          </a>
+        </li>
+        <li class="text-white/80 hover:text-sky-300 transition">
+          <a href="work.html" class="flex items-center gap-1">
+            <i class="bx bx-grid-alt"></i> Work
+          </a>
+        </li>
+        <li class="text-white/80 hover:text-sky-300 transition">
+          <a href="writing.html" class="flex items-center gap-1">
+            <i class="bx bx-edit"></i> Writing
+          </a>
+        </li>
+      </ul>
+
+      <button id="menuBtn" class="md:hidden text-2xl">
+        <i class="bx bx-menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden backdrop-blur-xl bg-slate-950/90 font-heading">
+      <ul class="flex flex-col px-6 py-6 gap-4">
+        <li class="text-sky-300"><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="bx bx-user"></i> About</a></li>
+        <li><a href="work.html"><i class="bx bx-grid-alt"></i> Work</a></li>
+        <li><a href="writing.html"><i class="bx bx-edit"></i> Writing</a></li>
+        <li><a href="contact.html"><i class="bx bx-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<main class="pt-36 pb-24">
+  <section class="max-w-5xl mx-auto px-6 text-center fade-in">
+
+    <div class="flex justify-center">
+      <img
+        src="images/founder.jpg"
+        alt="Ernest O. Jephthah"
+        class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-sky-400/40 shadow-2xl"
+      />
+    </div>
+
+    <h1 class="mt-6 text-4xl md:text-5xl font-heading font-bold">
+      Ernest O. Jephthah
+    </h1>
+
+    <p class="mt-2 text-xl text-white/60 font-heading">
+      (Web J)
+    </p>
+
+    <p class="mt-6 max-w-2xl mx-auto text-white/70 leading-relaxed">
+      Using <span class="text-sky-400 font-medium">AI as a creative tool</span>, I design, build, and write with
+      intention. Founder of <span class="text-sky-300 font-medium">Sombre9 Tech Ltd</span> — a creative brand
+      fusing <span class="text-sky-400">technology, design, and storytelling</span> to craft modern digital
+      experiences with clarity, purpose, and polish.
+    </p>
+
+    <div class="mt-10 flex justify-center font-heading">
+      <a href="about.html"
+         class="px-8 py-4 rounded-lg bg-sky-400 text-black font-medium hover:bg-sky-300 transition">
+        Learn about the Technologist, Writer & Digital Artist
+      </a>
+    </div>
+
+  </section>
+</main>
+
+<script>
+(function () {
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+  }
+})();
+</script>
+
+<footer class="mt-24 pt-10 pb-8 text-center text-sm font-heading text-white/50">
+  <div class="max-w-xs mx-auto border-t border-white/10 mb-6"></div>
+  <p>© 2025 Ernest O. Jephthah — Portfolio</p>
+  <p class="mt-1">Created by <span class="text-sky-400">Sombre9 Tech Ltd</span></p>
+</footer>
+
+</body>
+</html>
